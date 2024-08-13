@@ -1,0 +1,135 @@
+How to Set Up on a VPS
+
+This guide will walk you through the process of setting up a Virtual Private Server (VPS) to host a website. You can use various VPS providers including LuxeHost.nl.
+
+1. Choose a VPS Provider
+
+Providers:
+- DigitalOcean (https://www.digitalocean.com/)
+- Vultr (https://www.vultr.com/)
+- Linode (https://www.linode.com/)
+- Amazon Lightsail (https://aws.amazon.com/lightsail/)
+- LuxeHost.nl (https://www.luxehost.nl) (VPS and Web Hosting)
+
+Steps to Create a VPS:
+1. **Sign Up**: Create an account on the chosen VPS provider's website.
+2. **Create a VPS**:
+   - **Operating System**: Choose an OS (e.g., Ubuntu 20.04 LTS).
+   - **Plan**: Select a server size based on your needs (e.g., 1GB RAM, 1 vCPU).
+   - **Data Center Location**: Choose a location closest to your target audience.
+3. **Configure**: Set up any additional options like backups, monitoring, or private networking.
+4. **Deploy**: Create the VPS instance and note the provided credentials.
+
+For LuxeHost.nl:
+1. **Sign Up and Log In**: Create an account on LuxeHost.nl and log in.
+2. **Create a VPS**:
+   - Navigate to the VPS section.
+   - Choose your VPS plan and configure it.
+   - Deploy the VPS.
+3. **Create a Support Ticket**:
+   - If you encounter any issues or need assistance, create a support ticket via the LuxeHost.nl Discord server. Join their Discord server and follow the instructions provided to open a support ticket.
+
+2. Access Your VPS
+
+1. **Use SSH to Access**:
+   - Open your terminal (Linux/macOS) or Command Prompt/Powershell (Windows).
+   - Run the command:
+     ssh root@your_vps_address
+   - Replace `your_vps_address` with the IP address or hostname provided by your VPS provider.
+   - Enter the password or use an SSH key if configured.
+
+3. Update Your System
+
+1. **Update and Upgrade**:
+   sudo apt update
+   sudo apt upgrade -y
+
+4. Install a Web Server
+
+Using Apache:
+1. **Install Apache**:
+   sudo apt install apache2 -y
+2. **Start and Enable Apache**:
+   sudo systemctl start apache2
+   sudo systemctl enable apache2
+3. **Verify Apache Installation**:
+   - Open a web browser and go to your VPS address.
+   - You should see the Apache default page.
+
+5. Install PHP
+
+1. **Install PHP and Dependencies**:
+   sudo apt install php libapache2-mod-php php-mysql -y
+2. **Restart Apache**:
+   sudo systemctl restart apache2
+
+6. Upload Your Website
+
+1. **Upload Files Using SCP**:
+   - On your local machine, navigate to your website directory.
+   - Run the command:
+     scp -r * root@your_vps_address:/var/www/html/
+   - This will copy your website files to the default web directory on the VPS.
+
+7. Set Up File Permissions
+
+1. **Adjust Permissions**:
+   sudo chown -R www-data:www-data /var/www/html/
+   sudo chmod -R 755 /var/www/html/
+
+8. Configure Apache (Optional)
+
+1. **Create a Virtual Host Configuration**:
+   sudo nano /etc/apache2/sites-available/your_site.conf
+   - Add your configuration details.
+   - Save and exit (Ctrl+X, Y, Enter).
+2. **Enable the Site**:
+   sudo a2ensite your_site.conf
+   sudo systemctl reload apache2
+
+9. Secure Your VPS
+
+1. **Set Up a Firewall**:
+   sudo ufw allow OpenSSH
+   sudo ufw enable
+
+10. Test Your Website
+
+1. **Visit Your Website**:
+   - Open a web browser and navigate to your VPS address or domain name (if set up).
+   - Ensure the website is displayed correctly.
+
+11. Maintain and Update
+
+1. **Regular Updates**:
+   - Regularly run sudo apt update and sudo apt upgrade to keep your server up to date.
+2. **Monitor**:
+   - Keep an eye on server performance and logs to ensure everything runs smoothly.
+
+**Using DirectAdmin on LuxeHost.nl:**
+1. **Log in to DirectAdmin**:
+   - Access DirectAdmin by going to http://your_vps_address:2222.
+   - Log in using the credentials provided by LuxeHost.nl.
+
+2. **Create a Domain**:
+   - Go to "Domain Setup" and click on "Create a Domain".
+   - Enter your domain name and configure settings as needed.
+
+3. **Upload Website Files**:
+   - Go to "File Manager" and navigate to the `public_html` directory.
+   - Upload your website files here.
+
+4. **Set Up Email (Optional)**:
+   - Go to "E-Mail Accounts" and create email accounts if needed.
+
+5. **Manage Databases (Optional)**:
+   - Go to "MySQL Management" to create and manage databases.
+
+6. **Manage DNS (Optional)**:
+   - Go to "DNS Management" to set up and configure DNS records for your domain.
+
+---
+
+**Disclaimer**: This guide is provided as-is. While every effort has been made to ensure accuracy, we do not accept any responsibility for issues that may arise during the VPS setup or use. If you encounter problems, please consult the documentation provided by your VPS provider or seek support from their customer service. By following this guide, you acknowledge that any issues or damages resulting from the setup process are your own responsibility. Additionally, configurations and instructions may change over time, and the guide may not be updated to reflect those changes.
+
+This guide provides a basic overview of setting up a VPS for web hosting. Depending on your specific needs, additional steps or configurations may be required. Always refer to the documentation of your VPS provider and software for the most accurate and detailed instructions.
