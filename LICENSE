@@ -2,20 +2,22 @@ MIT License
 
 Copyright (c) 2024 gglucabest
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+Permission is hereby granted, free of charge, to any person or entity obtaining a copy of this software and associated documentation files (the "Software"), to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, subject to the following conditions:
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+1. The above copyright notice and this permission notice must be included in all copies or substantial portions of the Software.
+2. Any use of the Software for commercial purposes by individuals or companies is permitted only if the following attribution is included in all copies or substantial portions of the Software:
+   - "Made and Developed by LucaDevelopment.nl"
+3. The Software may not be sold, rented, leased, sublicensed, or otherwise commercially exploited for profit without express written permission from the copyright holder. Redistribution of the Software, either in its original or modified form, for profit or as part of a commercial product or service is expressly prohibited.
+4. The Software may not be reposted, republished, or distributed through any other means without explicit permission from the copyright holder.
+5. The Software may be used for any lawful purpose. However, the authors and copyright holders disclaim all responsibility for any illegal use of the Software. The authors and copyright holders are not liable for any claims, damages, or other liabilities arising from or related to illegal uses of the Software.
+6. The Software is provided "AS IS", without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose, and noninfringement. In no event shall the authors or copyright holders be liable for any claim, damages, or other liability, whether in an action of contract, tort, or otherwise, arising from, out of, or in connection with the Software or the use or other dealings in the Software.
+7. The authors and copyright holders reserve the right to modify, update, or change the terms of this license and the code of the Software at any time without prior notice. Any changes to the license or the code will be effective immediately upon being made available.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+**Additional Restrictions:**
+
+- Any modifications to the Software must retain the copyright notice and attribution to LucaDevelopment.nl as specified above.
+- Commercial use, including incorporation into commercial products or services, must include the attribution to LucaDevelopment.nl.
+- You may not create derivative works or adaptations for commercial purposes without prior written permission from the copyright holder.
+- Redistribution or republishing of the Software in any form or through any platform requires explicit written permission from the copyright holder.
+- The Software may be used for any lawful purpose, but the authors and copyright holders accept no responsibility for any illegal use or actions taken with the Software.
+- The terms of this license and the Software code may be modified, updated, or changed at any time by the authors and copyright holders, with such changes taking effect immediately upon being made available.
